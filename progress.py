@@ -8,7 +8,7 @@ def update_progress(md_file="readme.md"):
     # 匹配任务复选框
     total_tasks = len(re.findall(r"- \[.\]", content))
     completed_tasks = len(re.findall(r"- \[x\]", content, re.IGNORECASE))
-
+    print(completed_tasks)
     # 计算进度
     remaining_tasks = total_tasks - completed_tasks
     completion_rate = (completed_tasks / total_tasks) * 100 if total_tasks > 0 else 0
