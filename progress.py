@@ -6,16 +6,8 @@ def update_progress(md_file="readme.md"):
         content = f.read()
 
     # 匹配任务复选框
-    total_tasks = len(re.findall(r"- 
-
-\[.\]
-
-", content))
-    completed_tasks = len(re.findall(r"- 
-
-\[x\]
-
-", content, re.IGNORECASE))
+    total_tasks = len(re.findall(r"- \[.\]", content))
+    completed_tasks = len(re.findall(r"- \[x\]", content, re.IGNORECASE))
 
     # 计算进度
     remaining_tasks = total_tasks - completed_tasks
