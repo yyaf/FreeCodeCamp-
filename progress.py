@@ -39,7 +39,7 @@ def update_progress(md_file="readme.md"):
     with open(md_file, "w", encoding="utf-8") as f:
         f.write(content)
 
-    print(f"{completed_tasks}✅ 已更新 readme.md 中的进度统计表！" + progress_text)
+    print(f"{completed_tasks}✅ 已更新 readme.md 中的进度统计表！")
 
 if __name__ == "__main__":
     update_progress("readme.md")
