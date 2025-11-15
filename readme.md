@@ -1,7 +1,7 @@
 # FreeCodeCamp 一年学习计划打卡表
 
 ## 阶段 1：网页开发基础（第 1–12 周）
-- [ ] 第 1 周：HTML 基础（标签、结构，完成 Introduction to HTML）
+- [x] 第 1 周：HTML 基础（标签、结构，完成 Introduction to HTML）
 - [ ] 第 2 周：HTML 表单与语义化（完成 HTML Forms 模块）
 - [ ] 第 3 周：CSS 基础（选择器、颜色、字体）
 - [ ] 第 4 周：CSS 布局（Flexbox、Grid）
