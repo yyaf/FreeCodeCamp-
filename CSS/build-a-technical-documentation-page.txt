@@ -1,0 +1,208 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>
+        Web Doc
+      </header>
+      <a class="nav-link" href="#css_reference">CSS Reference</a>
+      <a class="nav-link" href="#css_guides">CSS Guides</a>
+      <a class="nav-link" href="#how_to">How to</a>
+      <a class="nav-link" href="#css_tools">CSS Tools</a>
+      <a class="nav-link" href="#css_other">CSS Other</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="css_reference">
+        <header>
+          CSS Reference
+        </header>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+      <section class="main-section" id="css_guides">
+        <header>
+          CSS Guides
+        </header>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+      <section class="main-section" id="how_to">
+        <header>
+          How to
+        </header>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+      <section class="main-section" id="css_tools">
+        <header>
+          CSS Tools
+        </header>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+      <section class="main-section" id="css_other">
+        <header>
+          CSS Other
+        </header>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 100vh;
+  width: 30%;
+  position: sticky;
+  top: 0;
+  font-size: 1rem;
+  padding: 3% 5%;
+}
+.nav-link {
+  text-decoration: none;
+  color: #883377;
+  margin: 10% 0 0 0;
+}
+
+#main-doc {
+  font-size: 1rem;
+  border: 3px double black;
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+  * {
+    font-size: 1.2rem;
+  }
+}
+
+** end of styles.css **
+
