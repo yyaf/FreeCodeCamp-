@@ -1,0 +1,125 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability Table</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>星期六</th>
+                <th>星期日</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="half">
+                <th class="time">13:00</th>
+                <td class="available-1"></td>
+                <td class="available-4"></td>
+            </tr>
+            <tr class="sharp">
+                <th class="time">14:00</th>
+                <td class="available-3"></td>
+                <td class="available-2"></td>
+            </tr>
+            <tr class="half">
+                <th class="time">15:00</th>
+                <td class="available-0"></td>
+                <td class="available-3"></td>
+            </tr>
+            <tr class="sharp">
+                <th class="time">16:00</th>
+                <td class="available-3"></td>
+                <td class="available-2"></td>
+            </tr>
+            <tr class="half">
+                <th class="time">17:00</th>
+                <td class="available-0"></td>
+                <td class="available-2"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="legend">
+        <span>Availability</span>
+        <div id="legend-gradient"></div>
+    </div>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+:root {
+  --color0: #33ffee;
+  --color1: #33ff88;
+  --color2: #33cc88;
+  --color3: #339988;
+  --color4: #336644;
+  --color5: #335522;
+  --solid-border: 2px solid black;
+  --dashed-border: 2px dashed black;
+}
+
+table {
+  margin: 10% auto;
+  width: 80%;
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.available-0 {
+  background-color: var(--color0);
+}
+.available-1 {
+  background-color: var(--color1);
+}
+.available-2 {
+  background-color: var(--color2);
+}
+.available-3 {
+  background-color: var(--color3);
+}
+.available-4 {
+  background-color: var(--color4);
+}
+.available-5 {
+  background-color: var(--color5);
+}
+
+#legend {
+  text-align: center;
+}
+
+#legend-gradient {
+  margin: 0 auto;
+  width: 50%;
+  height: 20px;
+  background-image: linear-gradient(
+    to right,
+    var(--color0) 20%,
+    var(--color1) 40% 50%,
+    var(--color2) 50% 70%,
+    var(--color3) 70% 85%,
+    var(--color4) 85% 90%,
+    var(--color5) 90%
+  );
+}
+
+** end of styles.css **
+
