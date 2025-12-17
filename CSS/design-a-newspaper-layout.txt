@@ -1,0 +1,102 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Newspaper Layout</title>
+<link href="https://fonts.font.im/css?family=Oxygen" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" >
+</head>
+
+<body>
+  <main class="newspaper-layout">
+    <figure class="cover-image">
+      <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.BdT9LIJnbKkJemAKeBlgggHaEo?w=301&h=188&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1" alt="人才引进图片" />
+      <!-- <figcaption>人才引进</figcaption> -->
+    </figure>
+    <header class="title">
+      <h1>深圳时事新闻</h1>
+    </header>
+    <article class="feature-article">
+      <h2>深圳出台人才新政 2026年1月1日施行</h2>
+      <p>12月16日，深圳市人力资源和社会保障局等部门近日印发《关于加强青年人才来深发展服务保障的若干措施》。
+其中提出，青年人才中的应届高校毕业生，来深求职面试、实习见习，可以通过“深梦扬帆”“青年驿站”等项目，申请最长15天免费住宿。青年人才可以申请租住过渡性住房，租金标准为市场参考租金的60%左右，优惠期不超过36个月。优惠租住期间，应当持续符合有关租住条件，不符合的按规定退出住房。优惠租住期满后，应当退出过渡性住房。青年人才未租住过渡性住房的，可以申请安居补贴，每月1250元（税后1000元），发放期不超过24个月。符合市、区新引进优秀青年人才入户补贴条件的，可以申请标准为博士10万元、硕士最高5万元、本科最高3万元的入户补贴。
+      </p>
+    </article>
+    <article class="small-article1">
+      <h3>持续筑牢综合保障屏障 助力残特奥会闭幕活动圆满收官</h3>
+      <p>12月15日晚，中华人民共和国第十二届残疾人运动会暨第九届特殊奥林匹克运动会闭幕活动在深圳体育中心体育馆圆满落幕。这场盛会收官的背后，是深圳综合保障组以“1+5”工作模式筑起的坚实防线：市应急管理局统筹抓总，联动医疗卫生、交通、食品安全、电力、气象五大专业领域协同发力，全程护航闭幕活动平稳有序开展，为本次残特奥会画上圆满句号。</p>
+    </article>
+    <article class="small-article2">
+      <h3>全球聚焦！这份榜单连续两年在福田发布，硬核实力印证高质量发展标杆</h3>
+      <p>2025深圳全球招商大会的余温未散，胡润全球榜单的发布再添新彩。12月16日，深圳福田再度成为全球商业与创新领域的焦点——胡润百富研究院连续两年选择在此发布《胡润全球高质量企业TOP1000》榜单。这份汇聚全球顶尖企业的“实力名录”，不仅揭示了全球经济发展的新趋势，更以数据印证了福田区在世界经济版图中的重要地位，让世界看见这座中心城区的澎湃活力与独特魅力。</p>
+    </article>
+    <article class="small-article3">
+      <h3>“大疆教父”李泽湘发表重磅分享：从 CES 到 GIS 共建大湾区科创生态体系全球展示中心</h3>
+      <p>12月2日，“大疆和中国硬科技教父”李泽湘在香港GIS 全球创新展暨全球创新峰会的开幕式上重磅发声：“ 从CES 到GIS， 携手共建大湾区全球科创生态体系全球展示中心。”
+这位一手培育出大疆、并创立X-bot Park机器人基地和深圳科创学院与的香港科技大学教授，始终站在学术与产业的交汇点。他指出，凭借全球最完整的供应链与年轻的创业生态，粤港澳大湾区正从“制造工厂”跃升为“创新源头”。</p>
+    </article>
+    <article class="secondary-article">
+      <h2>AI赋能视觉感知，自主创新为数字中国建设注入新动能</h2>
+      <p>12月5日，“神眸新视界·智启新未来”神眸2025年度生态共创大会在深圳举行。大会由研极微神眸主办，神眸产品专家们与央视广播、新华社等主流媒体及内容创作者们受邀共同见证本次活动。会上多项围绕超低功耗AI视觉、自研芯片与智能影像技术的创新成果集中亮相，展现了企业在人工智能与产业融合方面的最新探索。</p>
+    </article>
+  </main>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.newspaper-layout {
+  display: grid;
+  grid-template-areas: 
+  "title title title"
+  "feature-article feature-article cover-image"
+  "secondary-article secondary-article cover-image"
+  "small-article1 small-article2 small-article3";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto repeat(3, 1fr);
+  gap: 1.25rem;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.title {
+  grid-area: title;
+}
+.feature-article {
+  grid-area: feature-article;
+}
+.secondary-article {
+  grid-area: secondary-article;
+}
+.cover-image {
+  grid-area: cover-image;
+  
+}
+.cover-image > img {
+  max-width: 100%;
+}
+.small-article1 {
+  grid-area: small-article1;
+}
+.small-article2 {
+  grid-area: small-article2;
+}
+.small-article3 {
+  grid-area: small-article3;
+}
+
+** end of styles.css **
+
