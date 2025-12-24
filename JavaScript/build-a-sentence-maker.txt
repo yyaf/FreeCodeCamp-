@@ -1,0 +1,33 @@
+** start of script.js **
+
+let adjective;
+let noun;
+let verb;
+let place;
+let adjective2;
+let noun2;
+
+adjective = "mysterious";
+noun = "dragon";
+verb = "angered";
+place = "cave";
+adjective2 = "smoldering";
+noun2 = "berries";
+
+let firstStory;
+firstStory = "Once upon a time, there was a(n) " + adjective + " " + noun + " who loved to eat " + noun2 + "." + " The "+ noun + " lived in a " + place + " and had " + adjective2 + " nostrils that blew fire when it was " + verb + ".";
+console.log("First story: " + firstStory);
+
+adjective = "majestic";
+noun = "griffin";
+verb = "provoked";
+place = "peak";
+adjective2 = "crimson";
+noun2 = "honeycomb";
+
+let secondStory;
+secondStory = "Once upon a time, there was a(n) " + adjective + " " + noun + " who loved to eat " + noun2 + "." + " The "+ noun + " lived in a " + place + " and had " + adjective2 + " nostrils that blew fire when it was " + verb + ".";
+console.log("Second story: " + secondStory);
+
+** end of script.js **
+
