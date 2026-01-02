@@ -1,0 +1,12 @@
+** start of script.js **
+
+let celsius = 8;
+function convertCtoF(celsius) {
+  let fahrenheit = celsius * (9/5) + 32;
+  return fahrenheit;
+}
+
+console.log(`Fahrenheit: ${convertCtoF(celsius)}`);
+
+** end of script.js **
+
