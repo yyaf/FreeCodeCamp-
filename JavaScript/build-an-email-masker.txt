@@ -1,0 +1,15 @@
+** start of script.js **
+
+let email = "myEmail@email.com";
+function maskEmail(email) {
+  let at = email.indexOf("@");
+  let mask = email.slice(1, at - 1);
+  let masked = "*".repeat(at - 2);
+  // console.log(masked);
+  return email.replace(mask, masked);
+}
+
+console.log(maskEmail(email));
+
+** end of script.js **
+
