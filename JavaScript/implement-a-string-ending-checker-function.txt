@@ -1,0 +1,13 @@
+** start of script.js **
+
+function confirmEnding(checkStr, compareStr) {
+  if (checkStr.slice(-compareStr.length) == compareStr) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(confirmEnding("Bastian", "n"))
+
+** end of script.js **
+
